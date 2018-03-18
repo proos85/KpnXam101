@@ -1,11 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:KpnXam101"
              x:Class="KpnXam101.Pages.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout BackgroundColor="Aquamarine" Spacing="0">
+        <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="Accent" Spacing="0">
+            <Label Text="Start - Start" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Start"
+                   BackgroundColor="Silver"/>
+
+            <Label Text="Start - Center" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Silver"/>
+
+            <Label Text="Start - End" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="End" 
+                   BackgroundColor="Silver"/>
+
+            <Label Text="Start - Fill" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Fill"
+                   BackgroundColor="Silver"/>
+        </StackLayout>
+
+        <Image Source="https://blog.xamarin.com/wp-content/uploads/2014/01/IMG_20140121_121952357_HDR.jpg" Aspect="AspectFill" BackgroundColor="Aquamarine"/>
+        
+        <StackLayout VerticalOptions="EndAndExpand" BackgroundColor="Aqua" Spacing="0">
+            <Label Text="Start - Start" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Start"
+                   BackgroundColor="Silver"/>
+
+            <Label Text="Start - Center" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Silver"/>
+
+            <Label Text="Start - End" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="End" 
+                   BackgroundColor="Silver"/>
+
+            <Label Text="Start - Fill" 
+                   VerticalOptions="Start" 
+                   BackgroundColor="Silver"/>
+        </StackLayout>
+        
+    </StackLayout>
 
 </ContentPage>
