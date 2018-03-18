@@ -1,70 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
              x:Class="KpnXam101.Pages.MainPage">
 
-    <Grid RowSpacing="0"
-          ColumnSpacing="0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="100"/>
-        </Grid.RowDefinitions>
+    <StackLayout VerticalOptions="Center"
+                 Margin="10">
 
-        <StackLayout Grid.Row="0" 
-                     VerticalOptions="StartAndExpand" 
-                     BackgroundColor="Accent" 
-                     Spacing="0">
-            <Label Text="Start - Start" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Start"
-                   BackgroundColor="Silver"/>
+        <Entry x:Name="Getal1"
+               Placeholder="Getal 1"
+               PlaceholderColor="Accent"
+               Keyboard="Numeric">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry"
+                         Property="IsFocused" 
+                         Value="True">
+                    <Setter Property="BackgroundColor"
+                            Value="Yellow"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-            <Label Text="Start - Center" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Center"
-                   BackgroundColor="Silver"/>
+        <Entry x:Name="Getal2"
+               Placeholder="Getal 2"
+               PlaceholderColor="Accent"
+               Keyboard="Numeric">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry"
+                         Property="IsFocused" 
+                         Value="True">
+                    <Setter Property="BackgroundColor"
+                            Value="Yellow"/>
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
 
-            <Label Text="Start - End" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="End" 
-                   BackgroundColor="Silver"/>
+        <Picker x:Name="Picker"
+                Title="Actie"/>
 
-            <Label Text="Start - Fill" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Fill"
-                   BackgroundColor="Silver"/>
-        </StackLayout>
+        <Button Text="Reken uit"
+                Clicked="Button_OnClicked"/>
 
-        <Image Grid.Row="1" 
-               x:Name="XamarinMonkey"
-               Aspect="AspectFit" 
-               BackgroundColor="White"/>
-
-        <StackLayout Grid.Row="2" 
-                     VerticalOptions="EndAndExpand" 
-                     BackgroundColor="Aqua" 
-                     Spacing="0">
-            <Label Text="Start - Start" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Start"
-                   BackgroundColor="Silver"/>
-
-            <Label Text="Start - Center" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Center"
-                   BackgroundColor="Silver"/>
-
-            <Label Text="Start - End" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="End" 
-                   BackgroundColor="Silver"/>
-
-            <Label Text="Start - Fill" 
-                   VerticalOptions="Start" 
-                   BackgroundColor="Silver"/>
-        </StackLayout>
-
-    </Grid>
+    </StackLayout>
 
 </ContentPage>
