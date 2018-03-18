@@ -8,6 +8,8 @@ namespace KpnXam101.Pages
 		public MainPage()
 		{
 			InitializeComponent();
+
+		    XamarinMonkey.Source = "https://i.redditmedia.com/92TL_kmRrwXC1eenJG0ocjMrYcNM64_1KtwtW6zo-u8.png?w=320&s=02380754ddf1ea89db0abee08a47f4bd";
 		}
 	}
 }
