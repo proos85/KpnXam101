@@ -1,4 +1,5 @@
 ﻿using System.Windows.Input;
+using KpnXam101.TextToSpeak;
 using Xamarin.Forms;
 
 // ReSharper disable MemberCanBePrivate.Global
@@ -135,6 +136,8 @@ namespace KpnXam101.ViewModel
                 Getal1 = Getal2 = 0;
                 HeeftGebruikerPlusOfMinGeselecteerd = HeeftGebruikerPlusGeselecteerd = HeeftGebruikerMinGeselecteerd = false;
                 PlusBackgroundColor = MinBackgroundColor = "Brown";
+
+                DependencyService.Get<ITextToSpeak>().Speak(Totaal);
             }
             catch
             {
