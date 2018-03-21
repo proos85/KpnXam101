@@ -13,7 +13,7 @@ namespace KpnXam101.iOS.TextToSpeak
             var speechSynthesizer = new AVSpeechSynthesizer();
             var speechUtterance = new AVSpeechUtterance(text)
             {
-                Rate = AVSpeechUtterance.MaximumSpeechRate / 3,
+                Rate = AVSpeechUtterance.MaximumSpeechRate / 2,
                 Voice = AVSpeechSynthesisVoice.FromLanguage("en-AU"),
                 Volume = 0.5f,
                 PitchMultiplier = 1.0f
